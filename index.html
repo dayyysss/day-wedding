@@ -287,104 +287,213 @@
     </div>
   </section>
 
-  <!-- RSVP -->
   <section id="rsvp" class="rsvp">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8 col-10 text-center">
           <h2>Konfirmasi Kehadiran</h2>
-          <p>Isi form dibawah ini untuk melakukan konfirmasi kehadiran.</p>
+          <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
         </div>
       </div>
 
+      <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST"
+        action="https://script.google.com/macros/s/AKfycbyC-OC_U4o_ybD2X4Zzadn2lbT_JkkR931fTA4pjyZvvd_uw65TmVoHe9wRsnxPGKud/exec"
+        id="my-form">
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="nama" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="nama" name="nama">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="jumlah" class="form-label">Jumlah</label>
+            <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="status" class="form-label">Konfirmasi</label>
+            <select name="status" id="status" class="form-select">
+              <option selected>Pilih salah satu</option>
+              <option value="Hadir">Hadir</option>
+              <option value="Tidak Hadir">Tidak Hadir</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-12" style="margin-top: 35px;">
+          <button class="btn btn-primary">Kirim</button>
+        </div>
+      </form>
+    </section>
+
+      <section id="gifts" class="gifts">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-10 text-center">
+              <span>ungkapan tanda kasih</span>
+              <h2>Kirim Hadiah</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam iure perferendis provident ab aliquam
+                nemo.
+              </p>
+            </div>
+          </div>
+
+          <div class="row justify-content-center text-center">
+            <div class="col-md-6">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <div class="fw-bold">BCA</div>
+                  123456789 - FERDI ANSYAH
+                </li>
+                <li class="list-group-item">
+                  <div class="fw-bold">MANDIRI</div>
+                  987654321 - GO YOONJUNG
+                </li>
+                <li class="list-group-item">
+                  <div class="fw-bold">Saweria</div>
+                  <img src="img/saweria.png" alt="Saweria QR" class="img-thumbnail" width="150">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <small class="block">&copy; 2024 FeGo Wedding. All Rights Reserved.</small>
+              <small class="block">Design by <a href="https://instagram.com/dayys7_">@dayys7_</a></small>
+
+              <ul class="mt-3">
+                <li>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-youtube"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+      <div id="audio-container">
+        <audio id="song" autoplay loop>
+          <source src="audio/save-and-sound.mp3" type="audio/mp3">
+        </audio>
+
+        <div class="audio-icon-wrapper" style="display: none;">
+          <i class="bi bi-disc"></i>
+        </div>
       </div>
-  </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
-  <script>
-    simplyCountdown('.simply-countdown', {
-      year: 2040, // required
-      month: 3, // required
-      day: 30, // required
-      hours: 9, // Default is 0 [0-23] integer
-      words: { //words displayed into the countdown
-        days: { singular: 'hari', plural: 'hari' },
-        hours: { singular: 'jam', plural: 'jam' },
-        minutes: { singular: 'menit', plural: 'menit' },
-        seconds: { singular: 'detik', plural: 'detik' }
-      },
-    });
-  </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+      <script>
+        simplyCountdown('.simply-countdown', {
+          year: 2040, // required
+          month: 3, // required
+          day: 30, // required
+          hours: 9, // Default is 0 [0-23] integer
+          words: { //words displayed into the countdown
+            days: { singular: 'hari', plural: 'hari' },
+            hours: { singular: 'jam', plural: 'jam' },
+            minutes: { singular: 'menit', plural: 'menit' },
+            seconds: { singular: 'detik', plural: 'detik' }
+          },
+        });
+      </script>
 
-  <script>
-    const stickyTop = document.querySelector('.sticky-top');
-    const offcanvas = document.querySelector('.offcanvas');
+      <script>
+        const stickyTop = document.querySelector('.sticky-top');
+        const offcanvas = document.querySelector('.offcanvas');
 
-    offcanvas.addEventListener('show.bs.offcanvas', function () {
-      stickyTop.style.overflow = 'visible';
-    });
+        offcanvas.addEventListener('show.bs.offcanvas', function () {
+          stickyTop.style.overflow = 'visible';
+        });
 
 
-    offcanvas.addEventListener('hidden.bs.offcanvas', function () {
-      stickyTop.style.overflow = 'hidden';
-    });
+        offcanvas.addEventListener('hidden.bs.offcanvas', function () {
+          stickyTop.style.overflow = 'hidden';
+        });
 
-  </script>
+      </script>
 
-  <script>
-    const rootElement = document.querySelector(":root");
-    const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
-    const audioIcon = document.querySelector('.audio-icon-wrapper i');
-    const song = document.querySelector('#song');
-    let isPlaying = false;
+      <script>
+        const rootElement = document.querySelector(":root");
+        const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+        const audioIcon = document.querySelector('.audio-icon-wrapper i');
+        const song = document.querySelector('#song');
+        let isPlaying = false;
 
-    function disableScroll() {
-      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+        function disableScroll() {
+          scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
 
-      window.onscroll = function () {
-        window.scrollTo(scrollTop, scrollLeft);
-      }
+          window.onscroll = function () {
+            window.scrollTo(scrollTop, scrollLeft);
+          }
 
-      rootElement.style.scrollBehavior = 'auto';
-    }
+          rootElement.style.scrollBehavior = 'auto';
+        }
 
-    function enableScroll() {
-      window.onscroll = function () { }
-      rootElement.style.scrollBehavior = 'smooth';
-      // localStorage.setItem('opened', 'true');
-      playAudio();
-    }
+        function enableScroll() {
+          window.onscroll = function () { }
+          rootElement.style.scrollBehavior = 'smooth';
+          // localStorage.setItem('opened', 'true');
+          playAudio();
+        }
 
-    function playAudio() {
-      song.volume = 0.1;
-      audioIconWrapper.style.display = 'flex';
-      song.play();
-      isPlaying = true;
-    }
+        function playAudio() {
+          song.volume = 0.1;
+          audioIconWrapper.style.display = 'flex';
+          song.play();
+          isPlaying = true;
+        }
 
-    audioIconWrapper.onclick = function () {
-      if (isPlaying) {
-        song.pause();
-        audioIcon.classList.remove('bi-disc');
-        audioIcon.classList.add('bi-pause-circle');
-      } else {
-        song.play();
-        audioIcon.classList.add('bi-disc');
-        audioIcon.classList.remove('bi-pause-circle');
-      }
+        audioIconWrapper.onclick = function () {
+          if (isPlaying) {
+            song.pause();
+            audioIcon.classList.remove('bi-disc');
+            audioIcon.classList.add('bi-pause-circle');
+          } else {
+            song.play();
+            audioIcon.classList.add('bi-disc');
+            audioIcon.classList.remove('bi-pause-circle');
+          }
 
-      isPlaying = !isPlaying;
-    }
+          isPlaying = !isPlaying;
+        }
 
-    // if (!localStorage.getItem('opened')) {
-    //   disableScroll();
-    // }
-    disableScroll();
-  </script>
+        // if (!localStorage.getItem('opened')) {
+        //   disableScroll();
+        // }
+        disableScroll();
+      </script>
+
+      <script>
+        window.addEventListener("load", function () {
+          const form = document.getElementById('my-form');
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const data = new FormData(form);
+            const action = e.target.action;
+            fetch(action, {
+              method: 'POST',
+              body: data,
+            })
+              .then(() => {
+                alert("Konfirmasi kehadiran berhasil terkirim!");
+              })
+          });
+        });
+
+      </script>
 </body>
 
 </html>
