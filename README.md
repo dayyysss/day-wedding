@@ -1,0 +1,1 @@
+?p=pronoun&m=nama
