@@ -385,7 +385,7 @@
       transform: rotate(360deg);
     }
   }
-  
+
   /* Media Query */
   /* Extra large */
   @media (max-width: 1200px) {
